@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todo List</title>
+  <!-- Link to our styles (how the page looks) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>My Todo List</h1>
+
+    <!-- FEATURE 1: Create a task. The form holds a text box and an "Add" button. -->
+    <form id="task-form">
+      <input
+        type="text"
+        id="task-input"
+        placeholder="What do you need to do?"
+        autocomplete="off"
+        required
+      >
+      <button type="submit">Add</button>
+    </form>
+
+    <!-- The list of tasks. It starts empty; app.js fills it in. -->
+    <ul id="task-list"></ul>
+
+    <!-- Shown only when there are no tasks yet -->
+    <p id="empty-message">No tasks yet. Add one above!</p>
+  </main>
+
+  <!-- Link to our JavaScript (how the page behaves) -->
+  <script src="app.js"></script>
+</body>
+</html>
